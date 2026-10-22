@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elworks20240911-design.github.io/el-works-osaka/sitemap.xml
