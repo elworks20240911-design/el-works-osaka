@@ -2,18 +2,18 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="google-site-verification" content="PEeYy2tZ8dmRjXb06fvc1SbB79BJ1W19n725XiZLkcc" />
+  <meta name="google-site-verification" content="kfbMzVSPCMZW7QpnL0a0h1LobddIkyJ2NBtsniwMKbU" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0a0a0a" />
-  <meta name="description" content="株式会社EL worksは大阪府守口市を拠点に、電気設備工事、照明工事、コンセント増設、空調電源工事、配線・改修工事、請負・応援・手間請けに対応する電気工事会社です。" />
+  <meta name="description" content="大阪府守口市を拠点に、大阪府全域へ出張対応。株式会社EL worksは電気設備工事、照明工事、コンセント増設、空調電源工事、配線・改修工事、請負・応援・手間請けに対応します。" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://elworks20240911-design.github.io/el-works-osaka/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:site_name" content="株式会社EL works" />
-  <meta property="og:title" content="株式会社EL works｜大阪府守口市の電気設備工事" />
-  <meta property="og:description" content="現場の電気工事を、確かな段取りと機動力で。大阪府内を中心に対応します。" />
-  <title>株式会社EL works｜大阪府守口市の電気設備工事</title>
+  <meta property="og:title" content="大阪府・守口市の電気工事｜株式会社EL works" />
+  <meta property="og:description" content="守口市を拠点に大阪府全域へ。電気設備・照明・空調電源・配線改修のご相談に対応します。" />
+  <title>大阪府・守口市の電気工事｜株式会社EL works</title>
   <style>
     :root { --ink:#0b0b0b; --ink2:#151515; --paper:#f6f6f4; --line:rgba(255,255,255,.18); --gold:#e9e9e7; --gold-light:#fff; --muted:#b8b8b5; --dark:#101010; }
     * { box-sizing:border-box; }
@@ -104,6 +104,16 @@
     .area-tags span { border:1px solid rgba(255,255,255,.5); color:var(--gold-light); padding:.38rem .58rem; font-size:.72rem; }
     .coverage-caption { margin-top:1.35rem; color:#9b9891; font-size:.69rem; }
 
+    .local { padding:132px 0; background:#f0efeb; color:var(--dark); }
+    .local .eyebrow { color:#303030; }
+    .local .section-title em { color:#202020; }
+    .local-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem,9vw,9rem); align-items:center; }
+    .local-copy { margin:1.6rem 0 0; max-width:42rem; color:#4f4e4a; }
+    .local-list { display:grid; gap:1px; border:1px solid #bbb8b0; background:#bbb8b0; }
+    .local-item { min-height:100px; padding:1.15rem 1.25rem; background:#f9f8f5; }
+    .local-item b { display:block; color:#202020; font-family:Georgia,serif; font-size:1.2rem; font-weight:400; }
+    .local-item span { display:block; margin-top:.25rem; color:#5f5d58; font-size:.78rem; }
+
     .strength { padding:132px 0; background:#121212; }
     .strength-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; }
     .strength-copy { position:sticky; top:1rem; align-self:start; }
@@ -161,7 +171,7 @@
       .nav-links.is-open { display:flex; min-height:calc(100vh - 79px); }
       .nav-links .button { justify-content:center; }
       .hero { min-height:unset; padding-top:124px; }
-      .hero-grid,.intro-grid,.coverage-card,.strength-grid,.company-grid,.contact-grid { grid-template-columns:1fr; }
+      .hero-grid,.intro-grid,.coverage-card,.local-grid,.strength-grid,.company-grid,.contact-grid { grid-template-columns:1fr; }
       .hero-service-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
       .hero-service { min-height:88px; padding:.9rem; }
       .hero-stamp { justify-self:start; width:min(100%,360px); margin-top:1.3rem; }
@@ -202,14 +212,29 @@
     "@context":"https://schema.org",
     "@type":"Electrician",
     "name":"株式会社EL works",
-    "description":"大阪府守口市を拠点に、電気設備工事・照明工事・改修工事・空調関連電源工事を手がける電気工事会社です。",
+    "@id":"https://elworks20240911-design.github.io/el-works-osaka/#business",
+    "description":"大阪府守口市を拠点に、大阪府全域へ出張対応する電気工事会社です。電気設備工事・照明工事・改修工事・空調関連電源工事に対応します。",
     "telephone":"080-8325-5135",
     "email":"elworks20240911@gmail.com",
-    "address":{"@type":"PostalAddress","addressLocality":"守口市","addressRegion":"大阪府","streetAddress":"1-5-21","addressCountry":"JP"},
+    "address":{"@type":"PostalAddress","addressLocality":"守口市","addressRegion":"大阪府","addressCountry":"JP"},
     "additionalProperty":{"@type":"PropertyValue","name":"電気工事業登録","value":"大阪府知事登録第2026-0219号"},
-    "areaServed":{"@type":"AdministrativeArea","name":"大阪府内を中心に対応"},
+    "areaServed":{"@type":"AdministrativeArea","name":"大阪府"},
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"17:00"}
+    ],
     "founder":{"@type":"Person","name":"川邉 祐太"},
     "url":"https://elworks20240911-design.github.io/el-works-osaka/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "@id":"https://elworks20240911-design.github.io/el-works-osaka/#website",
+    "url":"https://elworks20240911-design.github.io/el-works-osaka/",
+    "name":"株式会社EL works",
+    "inLanguage":"ja-JP"
   }
   </script>
 </head>
@@ -236,10 +261,10 @@
       <div class="shell hero-content">
         <div class="hero-grid">
           <div>
-            <p class="eyebrow">Electrical contractor / Osaka</p>
+            <p class="eyebrow">Electrical contractor / Moriguchi, Osaka</p>
             <h1 id="hero-title">大阪府の電気工事なら。</h1>
             <p class="hero-company">株式会社EL works</p>
-            <p class="hero-lead">電気設備から照明・コンセント・空調電源まで。現場の条件に合わせ、請負・応援・手間請けのご相談に対応します。</p>
+            <p class="hero-lead">守口市を拠点に、大阪府全域の現場へ。電気設備から照明・コンセント・空調電源まで、請負・応援・手間請けのご相談に対応します。</p>
             <div class="hero-service-list" aria-label="対応工事・対応形態">
               <div class="hero-service"><small>01</small><span>電気設備工事</span></div>
               <div class="hero-service"><small>02</small><span>照明工事</span></div>
@@ -260,7 +285,7 @@
 
     <section class="trust" aria-label="対応内容">
       <div class="shell trust-inner">
-        <div class="trust-title">対応工事・対応形態</div>
+        <div class="trust-title">守口市拠点・大阪府全域へ</div>
         <div class="trust-list"><span>電気設備工事</span><span>照明工事</span><span>コンセント増設</span><span>空調電源工事</span><span>配線・改修工事</span><span>請負・応援・手間請け</span></div>
       </div>
     </section>
@@ -312,6 +337,21 @@
       </div>
     </section>
 
+    <section class="local" aria-labelledby="local-title">
+      <div class="shell local-grid">
+        <div>
+          <p class="eyebrow">Local commitment</p>
+          <h2 class="section-title" id="local-title">守口市を拠点に、<br><em>大阪の現場へ。</em></h2>
+          <p class="local-copy">地域の現場を一つひとつ丁寧に確認し、工事内容・工程・必要な体制に合わせて対応します。守口市から大阪府全域へ、電気工事に関するご相談をお受けします。</p>
+        </div>
+        <div class="local-list" aria-label="地域対応の考え方">
+          <div class="local-item"><b>守口市を拠点に対応</b><span>大阪府内の現場を中心に、内容と工程を確認して対応可否をお返しします。</span></div>
+          <div class="local-item"><b>現場の条件からご相談</b><span>施工場所・工期・図面・必要人数など、分かる範囲でお知らせください。</span></div>
+          <div class="local-item"><b>電気工事の幅広いご相談</b><span>設備・照明・コンセント・空調電源・配線改修まで、現場に合わせて検討します。</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="strength" id="strength" aria-labelledby="strength-title">
       <div class="shell strength-grid">
         <div class="strength-copy"><p class="eyebrow">Why EL works</p><h2 class="section-title" id="strength-title">元請け企業様に、<br><em>頼られる理由。</em></h2><p class="section-copy">ただ人手を補うのではなく、任せる範囲や工程を確認し、現場の一員として確実に進めることを目指します。</p></div>
@@ -342,11 +382,12 @@
         <dl class="company-details">
           <div class="detail"><dt>会社名</dt><dd>株式会社EL works</dd></div>
           <div class="detail"><dt>代表取締役</dt><dd>川邉 祐太</dd></div>
-          <div class="detail"><dt>所在地</dt><dd>大阪府守口市1-5-21</dd></div>
+          <div class="detail"><dt>拠点</dt><dd>大阪府守口市（出張対応）</dd></div>
           <div class="detail"><dt>電気工事業登録</dt><dd>大阪府知事登録第2026-0219号</dd></div>
           <div class="detail"><dt>電話番号</dt><dd><a href="tel:08083255135">080-8325-5135</a></dd></div>
           <div class="detail"><dt>メールアドレス</dt><dd><a href="mailto:elworks20240911@gmail.com">elworks20240911@gmail.com</a></dd></div>
           <div class="detail"><dt>対応エリア</dt><dd>大阪府内を中心に対応（近隣エリアは要相談）</dd></div>
+          <div class="detail"><dt>営業時間</dt><dd>平日 8:00〜18:00／土曜 8:00〜17:00／日祝休み</dd></div>
         </dl>
       </div>
     </section>
