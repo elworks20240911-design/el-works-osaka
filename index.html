@@ -395,13 +395,14 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="shell contact-grid">
         <div class="contact-copy"><p class="eyebrow">Contact</p><h2 class="section-title" id="contact-title">まずは現場の条件を、<br><em>お聞かせください。</em></h2><p class="section-copy">工事内容、施工場所、希望時期、必要人数などをお知らせください。内容を確認のうえ、対応可否をご連絡します。</p><div class="contact-links"><a class="contact-link" href="tel:08083255135"><strong>TEL</strong><span>080-8325-5135　↗</span></a><a class="contact-link" href="mailto:elworks20240911@gmail.com"><strong>MAIL</strong><span>elworks20240911@gmail.com　↗</span></a></div></div>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mpppqqrb" method="post">
           <h3>お問い合わせフォーム</h3>
           <div class="field"><label for="name">会社名・お名前</label><input id="name" name="name" autocomplete="name" placeholder="例：株式会社〇〇　山田様" required /></div>
           <div class="field"><label for="contact-detail">ご連絡先</label><input id="contact-detail" name="contact" autocomplete="email" placeholder="電話番号またはメールアドレス" required /></div>
           <div class="field"><label for="message">ご相談内容</label><textarea id="message" name="message" placeholder="工事内容・場所・時期・人数など" required></textarea></div>
-          <button class="button button--solid" type="submit">メールでお問い合わせ</button>
-          <p class="form-note" id="form-note" aria-live="polite">入力内容をメール本文に反映します。送信はメールソフトで確定されます。</p>
+          <button class="button button--solid" type="submit">お問い合わせを送信</button>
+          <p class="form-note" id="form-note">メールアプリは不要です。送信後、Formspreeの受付結果画面に移動します。エラーが表示された場合は、電話またはメールでもお問い合わせいただけます。</p>
+          <p class="form-note">ご入力いただいたお名前・連絡先・ご相談内容は、お問い合わせへの対応に利用します。送信にはFormspreeを使用し、入力内容は同社のサーバーでも保存・処理されます。詳しくは<a href="https://formspree.io/legal/privacy-policy/" style="text-decoration:underline">Formspreeのプライバシーポリシー（英語）</a>をご確認ください。</p>
         </form>
       </div>
     </section>
@@ -413,14 +414,7 @@
     menuButton?.addEventListener('click', () => { const open = navLinks.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); menuButton.textContent = open ? 'CLOSE' : 'MENU'; });
     navLinks?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { navLinks.classList.remove('is-open'); menuButton?.setAttribute('aria-expanded', 'false'); if (menuButton) menuButton.textContent = 'MENU'; }));
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('contact-form').addEventListener('submit', event => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      const body = `会社名・お名前：${form.get('name')}\nご連絡先：${form.get('contact')}\n\nご相談内容：\n${form.get('message')}`;
-      const recipient = 'elworks20240911@gmail.com';
-      document.getElementById('form-note').textContent = 'メール作成画面を開きます。内容をご確認のうえ送信してください。';
-      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent('【株式会社EL works】工事のご相談')}&body=${encodeURIComponent(body)}`;
-    });
   </script>
 </body>
 </html>
+
